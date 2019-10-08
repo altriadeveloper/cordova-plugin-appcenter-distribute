@@ -1,7 +1,4 @@
-// Copyright (c) Microsoft Corporation. All rights reserved.
-// Licensed under the MIT License.
-
-package com.gmrmarketing.cordova;
+package com.microsoft.azure.mobile.cordova;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
@@ -27,5 +24,5 @@ public class AppCenterDistributePlugin extends CordovaPlugin {
 
         AppCenter.start(Distribute.class);
     }
-    
+
 }

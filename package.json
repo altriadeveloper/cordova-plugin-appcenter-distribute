@@ -1,0 +1,23 @@
+{
+  "name": "cordova-plugin-appcenter-distribute",
+  "version": "0.0.1",
+  "description": "Enables Microsoft Azure App Center Distribute",
+  "license": "MIT",
+  "author": {
+    "name": "CEA"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbertucci-adig/cordova-plugin-appcenter-distribute.git"
+  },
+  "cordova": {
+    "id": "appcenter-distribute",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [],
+  "types": "./types/index.d.ts",
+  "directories": {}
+}

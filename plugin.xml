@@ -40,7 +40,7 @@
 
         <framework src="com.microsoft.appcenter:appcenter-distribute:2.3.0" />
 
-        <source-file src="src/android/AppCenterCrashesPlugin.java" target-dir="src/com/microsoft/azure/mobile/cordova" />
+        <source-file src="src/android/AppCenterDistributePlugin.java" target-dir="src/com/gmrmarketing/cordova" />
         <!-- <source-file src="src/android/CordovaCrashListener.java" target-dir="src/com/microsoft/azure/mobile/cordova" /> -->
         <!-- <source-file src="src/android/CrashesUtils.java" target-dir="src/com/microsoft/azure/mobile/cordova" /> -->
     </platform>

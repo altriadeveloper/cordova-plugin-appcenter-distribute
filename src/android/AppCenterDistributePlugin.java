@@ -1,4 +1,5 @@
-package com.gmrmarketing.cordova;
+// package com.gmrmarketing.cordova;
+package com.microsoft.azure.mobile.cordova;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
@@ -13,7 +14,6 @@ import org.json.JSONObject;
 
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.distribute.Distribute;
-import com.microsoft.azure.mobile.cordova.AppCenterShared;
 
 public class AppCenterDistributePlugin extends CordovaPlugin {
   private static final String LOG_TAG = "CordovaAppCenterDistribute";
@@ -23,7 +23,7 @@ public class AppCenterDistributePlugin extends CordovaPlugin {
       super.initialize(cordova, webView);
 
       LOG.i(LOG_TAG, "Initalizing AppCenterDistributePlugin");
-
+      
       AppCenterShared.configureAppCenter(
         cordova.getActivity().getApplication(),
         webView.getPreferences());

@@ -1,4 +1,4 @@
-package com.microsoft.azure.mobile.cordova;
+package com.gmrmarketing.cordova;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
@@ -13,7 +13,7 @@ import org.json.JSONObject;
 
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.distribute.Distribute;
-
+import com.microsoft.azure.mobile.cordova.AppCenterShared;
 
 public class AppCenterDistributePlugin extends CordovaPlugin {
   private static final String LOG_TAG = "CordovaAppCenterDistribute";

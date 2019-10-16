@@ -56,21 +56,7 @@
         <header-file src="src/ios/AppCenterDistributePlugin.h" />
         <source-file src="src/ios/AppCenterDistributePlugin.m" />
 
-        <!-- <header-file src="src/ios/CordovaCrashesDelegate.h" /> -->
-        <!-- <source-file src="src/ios/CordovaCrashesDelegate.m" /> -->
-
-        <!-- <header-file src="src/ios/CrashesUtils.h" /> -->
-        <!-- <source-file src="src/ios/CrashesUtils.m" /> -->
-
-        <podspec>
-            <config>
-                <source url="https://github.com/CocoaPods/Specs.git"/>
-            </config>
-            <pods use-frameworks="true">
-                <pod name="AppCenter/Distribute" spec="~> 2.3.0" />
-            </pods>
-        </podspec>
-
-        <framework src="AppCenter" type="podspec" spec="~> 2.3.0" />
+        <pod name="AppCenter" version="2.4.0"/>
+        <pod name="AppCenter/Distribute" version="2.4.0"/>
     </platform>
 </plugin>

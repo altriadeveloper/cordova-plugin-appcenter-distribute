@@ -14,6 +14,7 @@
 {
     [AppCenterShared configureWithSettings:self.commandDelegate.settings];
     [MSAppCenter startService:[MSDistribute class]];
+    [MSDistribute setEnabled:false]
 }
 
 @end

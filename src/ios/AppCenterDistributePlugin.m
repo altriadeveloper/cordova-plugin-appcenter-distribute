@@ -17,7 +17,7 @@
     [MSDistribute setEnabled:false];
 }
 
-- (void)checkForUpdates
+- (void)checkForUpdates:(CDVInvokedUrlCommand *)command;
 {
     [MSDistribute setEnabled:false];
     [MSDistribute setEnabled:true];

@@ -47,7 +47,7 @@
 
     <platform name="ios">
         <preference name="APP_SECRET" />
-        
+
         <config-file target="config.xml" parent="/*">
             <feature name="AppCenterDistribute">
                 <param name="ios-package" value="AppCenterDistributePlugin" />
@@ -56,7 +56,7 @@
         </config-file>
 
         <config-file parent="CFBundleURLTypes" platform="ios" target="*-Info.plist">
-            <<array>
+            <array>
   		        <string>appcenter-$APP_SECRET</string>
   	        </array>
         </config-file>

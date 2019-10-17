@@ -46,6 +46,8 @@
     </platform>
 
     <platform name="ios">
+        <preference name="APP_SECRET" />
+        
         <config-file target="config.xml" parent="/*">
             <feature name="AppCenterDistribute">
                 <param name="ios-package" value="AppCenterDistributePlugin" />
@@ -53,10 +55,13 @@
             </feature>
         </config-file>
 
+        <config-file parent="CFBundleURLTypes" platform="ios" target="*-Info.plist">
+            <<array>
+  		        <string>appcenter-$APP_SECRET</string>
+  	        </array>
+        </config-file>
+
         <header-file src="src/ios/AppCenterDistributePlugin.h" />
         <source-file src="src/ios/AppCenterDistributePlugin.m" />
-
-        <pod name="AppCenter" version="2.4.0"/>
-        <pod name="AppCenter/Distribute" version="2.4.0"/>
     </platform>
 </plugin>

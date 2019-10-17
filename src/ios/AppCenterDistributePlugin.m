@@ -14,13 +14,13 @@
 {
     [AppCenterShared configureWithSettings:self.commandDelegate.settings];
     [MSAppCenter startService:[MSDistribute class]];
-    [MSDistribute setEnabled:false]
+    [MSDistribute setEnabled:false];
 }
 
 - (void)checkForUpdates
 {
-    [MSDistribute setEnabled:false]
-    [MSDistribute setEnabled:true]
+    [MSDistribute setEnabled:false];
+    [MSDistribute setEnabled:true];
 }
 
 @end

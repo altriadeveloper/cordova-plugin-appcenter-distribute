@@ -9,6 +9,6 @@
 
 - (void)pluginInitialize;
 
-- (void)checkForUpdates;
+- (void)checkForUpdates:(CDVInvokedUrlCommand *)command;
 
 @end

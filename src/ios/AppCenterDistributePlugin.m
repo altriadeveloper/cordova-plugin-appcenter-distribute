@@ -17,4 +17,10 @@
     [MSDistribute setEnabled:false]
 }
 
+- (void)checkForUpdates
+{
+    [MSDistribute setEnabled:false]
+    [MSDistribute setEnabled:true]
+}
+
 @end

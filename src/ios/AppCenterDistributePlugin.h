@@ -9,4 +9,6 @@
 
 - (void)pluginInitialize;
 
+- (void)checkForUpdates;
+
 @end

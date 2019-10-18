@@ -74,7 +74,7 @@
                 <source url="https://github.com/CocoaPods/Specs.git"/>
             </config>
             <pods use-frameworks="true">
-                <pod name="AppCenter/Crashes" spec="~> 2.5.0" />
+                <pod name="AppCenter/Distribute" spec="~> 2.5.0" />
             </pods>
         </podspec>
 

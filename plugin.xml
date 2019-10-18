@@ -69,7 +69,15 @@
         <header-file src="src/ios/AppCenterDistributePlugin.h" />
         <source-file src="src/ios/AppCenterDistributePlugin.m" />
 
-        <pod name="AppCenter" version="2.5.0"/>
-        <pod name="AppCenter/Distribute" version="2.5.0"/>
+        <podspec>
+            <config>
+                <source url="https://github.com/CocoaPods/Specs.git"/>
+            </config>
+            <pods use-frameworks="true">
+                <pod name="AppCenter/Distribute" spec="~> 2.5.0" />
+            </pods>
+        </podspec>
+
+        <framework src="AppCenter" type="podspec" spec="~> 2.5.0" />
     </platform>
 </plugin>

@@ -9,16 +9,19 @@
 @import AppCenterDistribute;
 
 @implementation AppCenterDistributePlugin
+bool isServiceStarted = false;
 
 - (void)pluginInitialize
 {
     [AppCenterShared configureWithSettings:self.commandDelegate.settings];
-    [MSAppCenter startService:[MSDistribute class]];
-    [MSDistribute setEnabled:false];
 }
 
 - (void)checkForUpdates:(CDVInvokedUrlCommand *)command;
 {
+    if (!isServiceStarted) {
+        [MSAppCenter startService:[MSDistribute class]];
+        isServiceStarted = true;
+    }
     [MSDistribute setEnabled:false];
     [MSDistribute setEnabled:true];
 }
